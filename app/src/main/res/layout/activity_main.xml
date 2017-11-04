@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="16dp"
+  tools:context="com.capicp.lifeexpensecalculator.MainActivity">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginBottom="42dp">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Bs."
+          android:textSize="40dp"/>
+      <EditText android:id="@+id/vef_expense"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"
+          android:inputType="numberDecimal"
+          android:singleLine="true"
+          android:maxLines="1"
+          android:textAlignment="center"
+          android:textSize="40dp"
+          />
+
+  </LinearLayout>
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Equivale a"
+      android:textAlignment="center"/>
+
+  <TextView android:id="@+id/usd_expense"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textAlignment="center"
+      android:text="0$"
+      android:textColor="@android:color/black"
+      android:textStyle="bold"
+      android:textSize="50dp"
+      android:layout_marginBottom="20dp"/>
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textAlignment="center"
+      android:textSize="22dp"
+      android:text="Has gastado"/>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="100dp"
+      android:layout_marginBottom="10dp">
+
+    <TextView android:id="@+id/life_expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="20"
+        android:textSize="90dp"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hrs."
+        android:layout_toRightOf="@id/life_expense"
+        android:layout_alignParentBottom="true"
+        />
+
+  </RelativeLayout>
+
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textAlignment="center"
+      android:text="de tu vida"/>
+
+
+
+</LinearLayout>
