@@ -1,3 +1,5 @@
 <resources>
   <string name="app_name">Life Expense Calculator</string>
+  <string name="sp_file_settings">settings</string>
+  <string name="sp_usd_vef_rate">usd_vef_rate</string>
 </resources>
